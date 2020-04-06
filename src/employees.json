@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Fernando Torres",
+        "email": "torres@fc.com",
+        "position": "Forward",
+        "role": "CF"
+    },
+    {
+        "id": 2,
+        "name": "Alvaro Saborio",
+        "email": "sabo@fc.com",
+        "position": "Forward",
+        "role": "CF"
+    },
+    {
+        "id": 3,
+        "name": "Lionel Messi",
+        "email": "messi@fc.com",
+        "position": "Midfielder",
+        "role": "CAM"
+    },
+    {
+        "id": 4,
+        "name": "Cristiano Ronaldo",
+        "email": "cr7@fc.com",
+        "position": "Forward",
+        "role": "Winger"
+    },
+    {
+        "id": 5,
+        "name": "Antione Griezemann",
+        "email": "grieze@fc.com",
+        "position": "Forward",
+        "role": "Winger"
+    },
+    {
+        "id": 6,
+        "name": "Kyle Beckerman",
+        "email": "becks@fc.com",
+        "position": "Midfielder",
+        "role": "CDM"
+    },
+    {
+        "id": 7,
+        "name": "Toni Kroos",
+        "email": "kroos@fc.com",
+        "position": "Midfielder",
+        "role": "CM"
+    },
+    {
+        "id": 8,
+        "name": "Sergio Ramos",
+        "email": "ramos@fc.com",
+        "position": "Defender",
+        "role": "CB"
+    },
+    {
+        "id": 9,
+        "name": "Dani Alves",
+        "email": "alves@fc.com",
+        "position": "Defender",
+        "role": "RB"
+    },
+    {
+        "id": 10,
+        "name": "Manuel Neuer",
+        "email": "neuer@fc.com",
+        "position": "Goalkeeper",
+        "role": "GK"
+    }
+]
