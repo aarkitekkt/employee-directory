@@ -1,13 +1,13 @@
 import React from "react";
 
 
-function Employee() {
+function Employee(props) {
     return (
         <tr>
-            <td>Emp Name</td>
-            <td>Emp Email</td>
-            <td>Emp Position</td>
-            <td>Emp Role</td>
+            <td>{props.name}</td>
+            <td>{props.email}</td>
+            <td>{props.position}</td>
+            <td>{props.role}</td>
         </tr>
     )
 }
