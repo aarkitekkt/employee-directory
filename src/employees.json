@@ -68,5 +68,26 @@
         "email": "neuer@fc.com",
         "position": "Goalkeeper",
         "role": "GK"
+    },
+    {
+        "id": 11,
+        "name": "Zlatan Ibrahimovic",
+        "email": "zlatan@fc.com",
+        "position": "Forward",
+        "role": "CF"
+    },
+    {
+        "id": 12,
+        "name": "Christian Pulisic",
+        "email": "pulisic@fc.com",
+        "position": "Forward",
+        "role": "LW"
+    },
+    {
+        "id": 13,
+        "name": "Tyler Adams",
+        "email": "adams@fc.com",
+        "position": "Midfielder",
+        "role": "DM"
     }
 ]

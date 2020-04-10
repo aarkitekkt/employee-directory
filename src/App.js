@@ -1,11 +1,13 @@
 import React from 'react';
-import Table from "./Components/Table"
 import './App.css';
+import EmployeeContainer from './Components/EmployeeContainer';
 
 
 
 function App() {
-  return (<Table />)
+  return (
+    <EmployeeContainer />
+  )
 }
 
 export default App;
