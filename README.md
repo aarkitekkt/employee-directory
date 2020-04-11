@@ -2,7 +2,7 @@
 
 Repository: https://github.com/aarkitekkt/employee-tracker
 
-Deployed: 
+Deployed: https://fc-employees.herokuapp.com/
 
 ## Overview
 ​
@@ -14,7 +14,7 @@ Search by name:
 ![Search](/assets/search.gif "Search Employees By Name")
 
 Filter/Sort:
-![Home](/assets/fitler.gif "Filter/Sort")
+![Home](/assets/filter.gif "Filter/Sort")
 
 ​
 ### Problem
