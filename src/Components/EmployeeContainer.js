@@ -61,7 +61,6 @@ class EmployeeContainer extends Component {
         console.log("Sorting by " + sortBy);
 
         if (sortBy === "name") {
-
             var sortName = EmpArray.sort(function (a, b) {
                 var nameA = a.name.toLowerCase()
                 var nameB = b.name.toLowerCase()

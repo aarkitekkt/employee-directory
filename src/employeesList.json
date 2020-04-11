@@ -25,14 +25,14 @@
         "name": "Cristiano Ronaldo",
         "email": "cr7@fc.com",
         "position": "Forward",
-        "role": "Winger"
+        "role": "LW"
     },
     {
         "id": 5,
         "name": "Antione Griezemann",
         "email": "grieze@fc.com",
         "position": "Forward",
-        "role": "Winger"
+        "role": "RW"
     },
     {
         "id": 6,
@@ -89,5 +89,61 @@
         "email": "adams@fc.com",
         "position": "Midfielder",
         "role": "DM"
+    },
+    {
+        "id": 14,
+        "name": "Nick Rimando",
+        "email": "rimando@fc.com",
+        "position": "Goalkeeper",
+        "role": "GK"
+    },
+    {
+        "id": 15,
+        "name": "Albert Rusnak",
+        "email": "rusnak@fc.com",
+        "position": "Midfielder",
+        "role": "CAM"
+    },
+    {
+        "id": 16,
+        "name": "Frank Lampard",
+        "email": "fatFrank@fc.com",
+        "position": "Midfielder",
+        "role": "CM"
+    },
+    {
+        "id": 17,
+        "name": "Virgil Van Dyke",
+        "email": "VVD@fc.com",
+        "position": "Defender",
+        "role": "CB"
+    },
+    {
+        "id": 18,
+        "name": "Deandre Yedlin",
+        "email": "yedlin@fc.com",
+        "position": "Defender",
+        "role": "RB"
+    },
+    {
+        "id": 19,
+        "name": "Luiz Suarez",
+        "email": "suarex@fc.com",
+        "position": "Forward",
+        "role": "CF"
+    },
+    {
+        "id": 20,
+        "name": "Sadio Mane",
+        "email": "sadio@fc.com",
+        "position": "Forward",
+        "role": "RW"
+    },
+    {
+        "id": 21,
+        "name": "Andre Ter-Stegen",
+        "email": "andre@fc.com",
+        "position": "Goalkeeper",
+        "role": "GK"
     }
 ]
