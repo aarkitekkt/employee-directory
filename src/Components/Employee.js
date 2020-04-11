@@ -3,7 +3,7 @@ import React from "react";
 
 function Employee(props) {
     return (
-        <tr>
+        <tr key={props.id}>
             <td>{props.name}</td>
             <td>{props.email}</td>
             <td>{props.position}</td>
