@@ -5,8 +5,8 @@ function Table(props) {
 
     return (
         <div>
-            <table>
-                <thead>
+            <table className="table mt-3">
+                <thead className="thead-light">
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
