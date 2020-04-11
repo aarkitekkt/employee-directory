@@ -2,7 +2,7 @@
 
 Repository: https://github.com/aarkitekkt/employee-tracker
 
-Deployed: https://fc-employees.herokuapp.com/
+Deployed: https://aarkitekkt-employees.herokuapp.com/
 
 ## Overview
 ​
