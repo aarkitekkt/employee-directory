@@ -60,15 +60,42 @@ class EmployeeContainer extends Component {
 
         console.log("Sorting by " + sortBy);
 
-        EmpArray.sort(function (a, b) { return a.name - b.name });
+        if (sortBy === "name") {
 
+            var sortName = EmpArray.sort(function (a, b) {
+                var nameA = a.name.toLowerCase()
+                var nameB = b.name.toLowerCase()
+                if (nameA < nameB) {
+                    return -1
+                } else if (nameA > nameB) {
+                    return 1
+                } else { return 0 }
+            });
+            this.setState({ employees: sortName });
+        } else if (sortBy === "role") {
+            var sortRole = EmpArray.sort(function (a, b) {
+                var nameA = a.role.toLowerCase()
+                var nameB = b.role.toLowerCase()
+                if (nameA < nameB) {
+                    return -1
+                } else if (nameA > nameB) {
+                    return 1
+                } else { return 0 }
+            });
+            this.setState({ employees: sortRole });
+        } else {
+            var sortPosition = EmpArray.sort(function (a, b) {
+                var nameA = a.position.toLowerCase()
+                var nameB = b.position.toLowerCase()
+                if (nameA < nameB) {
+                    return -1
+                } else if (nameA > nameB) {
+                    return 1
+                } else { return 0 }
+            });
+            this.setState({ employees: sortPosition });
+        }
 
-        console.log(sortBy);
-        console.log(EmpArray);
-        console.log(EmpArray[0].sortBy);
-
-
-        // this.setState({ employees: sorted });
     };
 
     handleListReset = () => {
