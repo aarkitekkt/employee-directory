@@ -13,7 +13,7 @@ function Search(props) {
                 placeholder="Employee Name"
                 id="search"
             />
-            <button className="btn btn-secondary mt-2" onClick={props.handleFormSubmit}>
+            <button className="btn btn-block btn-secondary mt-2" onClick={props.handleFormSubmit}>
                 Search Employees
             </button>
         </div>

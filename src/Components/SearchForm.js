@@ -5,7 +5,7 @@ function SearchForm(props) {
         <form>
             <div>
                 {props.children}
-                <button className="btn btn-success btn-lg" onClick={props.handleListReset}>
+                <button className="btn btn-success" onClick={props.handleListReset}>
                     Reset
                 </button>
             </div>

@@ -6,7 +6,9 @@ import Search from "./Search";
 import employeesList from "../employeesList.json";
 import Employee from "./Employee";
 import Filter from './Filter';
-import Sort from "./Sort"
+import Sort from "./Sort";
+import Row from "./Row";
+import Col from "./Col";
 
 
 
@@ -108,22 +110,31 @@ class EmployeeContainer extends Component {
             <div className="container px-5">
                 <Title />
                 <SearchForm>
-                    <Search
-                        value={this.state.search}
-                        handleInputChange={this.handleInputChange}
-                        handleFormSubmit={this.handleFormSubmit}
-                    />
-                    <Filter
-                        value={this.state.filter}
-                        handleInputChange={this.handleInputChange}
-                        handleFilterSubmit={this.handleFilterSubmit}
-                    />
-                    <Sort
-                        value={this.state.sort}
-                        handleInputChange={this.handleInputChange}
-                        handleSortSubmit={this.handleSortSubmit}
-                    />
+                    <Row>
+                        <Col size="md-4">
+                            <Search
+                                value={this.state.search}
+                                handleInputChange={this.handleInputChange}
+                                handleFormSubmit={this.handleFormSubmit}
+                            />
+                        </Col>
+                        <Col size="md-4">
+                            <Filter
+                                value={this.state.filter}
+                                handleInputChange={this.handleInputChange}
+                                handleFilterSubmit={this.handleFilterSubmit}
+                            />
+                        </Col>
+                        <Col size="md-4">
+                            <Sort
+                                value={this.state.sort}
+                                handleInputChange={this.handleInputChange}
+                                handleSortSubmit={this.handleSortSubmit}
+                            />
+                        </Col>
+                    </Row>
                 </SearchForm>
+
                 <Table>
                     {this.state.employees[0] ? (
                         this.state.employees.map(employee => (

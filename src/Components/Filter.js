@@ -15,7 +15,7 @@ function Filter(props) {
                 <option value="Defender">Defender</option>
                 <option value="Goalkeeper">Goalkeeper</option>
             </select>
-            <button className="btn btn-secondary mt-2" onClick={props.handleFilterSubmit}>
+            <button className="btn btn-secondary btn-block mt-2" onClick={props.handleFilterSubmit}>
                 Filter By Position
             </button>
         </div>

@@ -14,7 +14,7 @@ function Sort(props) {
                 <option value="position">position</option>
                 <option value="role">role</option>
             </select>
-            <button className="btn btn-secondary mt-2" onClick={props.handleSortSubmit}>
+            <button className="btn btn-block btn-secondary mt-2" onClick={props.handleSortSubmit}>
                 Sort Employees
             </button>
         </div>

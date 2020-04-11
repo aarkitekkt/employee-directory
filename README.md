@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee Tracker
 
-## Available Scripts
+Repository: https://github.com/aarkitekkt/employee-tracker
 
-In the project directory, you can run:
+Deployed: 
 
-### `npm start`
+## Overview
+​
+The purpose of this application is use React JS to provide a complete list of employees and allow the user to search, sort and filter employees.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Gallery
+​
+Search by name:
+![Search](/assets/search.gif "Search Employees By Name")
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Filter/Sort:
+![Home](/assets/fitler.gif "Filter/Sort")
 
-### `npm test`
+​
+### Problem
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A challenge faced with this application was sorting the array of employees by object keys given a selected parameter.
 
-### `npm run build`
+### Solution
+​
+When a sorting parameter is selected by the user, the state is updated.  A array.sort() statement was written for each possible criteria and using an if statement, the state was compared to each criteria in order to sort the array correctly and save to a new variable.  This new array is the set as the new state which React renders to the page.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech and Features Used
+​
+* React
+* BootStrap
+​
+## How to use
+​
+When the page is loaded, the complete list of employees is rendered in a table.  A form gives the user options to search by name, filter by position, and sort by name, position, and role.  Click reset to return to the complete list of employees.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Technical Overview
+​
+1. When the page is loaded, a table takes the current employees state and maps a new table row for each employee in the array.
+2. The employee state is derived from a seperate object array containing information for all employees.
+3. As a name is typed into the search input, a function dynamically updates the search state.  When submitted, a .filter() method returns any employee where the name matches the searched name. If no matches are found, an h3 is rendered saying no matches exist.
+4. When a filter criteria is selected from the form, the filter state is dynamically updated.  When a filter criteria is submited, a filter() methed returns all employees where the position is the same as the filter state and saved to a new array.  This new array is set as the new employee state which is rendered to the page table.  
+5. When a sort criteria is selected, the sort state is dynamically updated. An if statement is used to determine which .sort() method is used to sort the employee array and save the new array.  This new array is set as the new employee state and rendered to the table.
+6. A reset button sets the employee state to the original array which is rendered to the table.
